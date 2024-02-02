@@ -15,6 +15,7 @@
       <!-- input은 열린 태그 (닫는 태그x)이기 때문에 꼭 / 닫아주기 -->
       text :
       <input type="text" />
+      <br />
       <!-- label 태그란 -->
       <!-- for 속성을 사용해 input 태그와 연결할 수 있는 태그 -->
       <!-- 해당 label을 클릭할 경우 연결된 input에 focus를 하거나 체크할 수 있음 -> 사용자 편의성을 높임 -->
@@ -22,6 +23,122 @@
       <!-- label과 함께 쓸 경우(무조건 꼭 같이 써야하는건 아니지만 사용자의 편의를 위해서 사용함) -->
       <label for="aaa">text with label :</label>
       <input type="text" id="aaa" />
+      <br />
+      <!-- placeholder : 예시 텍스트 입력 (연한 회색, 값이 들어가면 안보임) -->
+      <label for="email">이메일</label>
+      <input type="email" id="email" placeholder="example@aa.co.kr" />
+      <br />
+      <!-- label의 for 속성을 사용하지 않고 암시적으로 연결하는 방법 -->
+      <label>
+        비밀번호
+        <input type="password" />
+      </label>
+      <br />
+
+      <!-- checked : 자동으로 체크된 상태 -->
+      <input type="checkbox" id="동의" name="agree" checked />
+      <label for="동의">동의합니다</label>
+
+      <!-- disabled : 비활성화 -->
+      <input type="checkbox" id="동의1" name="agree" disabled />
+      <label for="동의1">동의합니다</label>
+      <br />
+
+      <h5><strong>다음 중 input type이 아닌 것은? (모두 고르시오)</strong></h5>
+      <input type="checkbox" id="text3" name="select" />
+      <label for="text3">text</label>
+      <input type="checkbox" id="click" name="select" checked />
+      <label for="click">click</label>
+      <input type="checkbox" id="bread" name="select" checked />
+      <label for="bread">bread</label>
+      <input type="checkbox" id="img" name="select" checked />
+      <label for="img">img</label>
+      <input type="checkbox" id="date" name="select" />
+      <label for="date">date</label>
+      <br />
+      <!-- radio는 그룹 중에서 하나만 선택할 수 있는 타입 -->
+      <!-- checkbox는 여러개를 선택할 수 있는 타입 -->
+      <!-- checkbox & radio는 같은 name을 부여해 그룹화해야함 -->
+      <!-- radio도 동일하게 checked, disabled 속성 사용 가능 -->
+      <input type="radio" id="radio1" name="radio" />
+      <label for="radio1">radio type1</label>
+      <input type="radio" id="radio2" name="radio" />
+      <label for="radio2">radio type2</label>
+      <input type="radio" id="radio3" name="radio" />
+      <label for="radio3">radio type3</label>
+      <br />
+      <!-- name으로 묶지 않으면 전체 선택 가능 -->
+      <input type="radio" id="radio11" />
+      <label for="radio11">radio type1</label>
+      <input type="radio" id="radio22" />
+      <label for="radio22">radio type2</label>
+      <input type="radio" id="radio33" />
+      <label for="radio33">radio type3</label>
+      <br />
+
+      <h5><strong>다음 중 img 태그의 속성인 것은?</strong></h5>
+      <input type="radio" id="rad" />
+      <label for="rad">title</label>
+      <input type="radio" id="rad2" checked />
+      <label for="rad2">alt</label>
+      <input type="radio" id="rad3" />
+      <label for="rad3">mouse</label>
+      <input type="radio" id="rad4" />
+      <label for="rad4">value</label>
+      <br />
+
+      <label for="color">색상을 선택해주세요.</label>
+      <input type="color" id="color" />
+      <br />
+
+      <label for="range" id="range">범위를 지정해주세요.</label>
+      <input type="range" />
+      <br />
+
+      <label for="file">파일을 업로드해주세요.</label>
+      <input type="file" id="file" />
+      <br />
+      <!-- number type은 input 창 내부에 숫자 이외의 값이 입력되지 않음 -->
+      <!-- input 창 내부 오른편에 count 값을 변경시키는 화살표 자동으로 생성 -->
+      <label for="number">숫자를 입력해주세요.</label>
+      <input type="number" id="number" />
+      <br />
+
+      <label for="date1">생년월일을 입력해주세요.</label>
+      <input type="date" id="date1" />
+      <br />
+
+      <label for="date-time"
+        >시간 포함 생년월일을 입력해주세요.(시간포함)</label
+      >
+      <input type="datetime-local" id="date-time" />
+      <br />
+      <!-- 버튼을 만들기 -->
+      <!-- 방법 1. input 태그의 button type -->
+      <!-- 열린 태그이기 때문에 내부에 자식 요소를 만들 수 없음 -->
+      <!-- 버튼 내부의 content는 value 속성을 사용해 부여 -->
+      <input type="button" value="버튼" />
+      <!-- 방법 2. input 태그의  submit type-->
+      <!-- value를 지정하지 않아도 기본적으로 "제출"이라는 값이 들어감 -->
+      <!-- form 태그 내의 모든 input값을 서버에 전송 (JS없이) -->
+      <input type="submit" value="제출 싫어요" />
+      <!-- 방법 3. button 태그 사용 -->
+      <!-- 여는 태그와 닫는 태그가 있어 자유롭게 스타일링 및 활용 가능 -->
+      <button>
+        버튼 태그로 만든 버튼
+        <div style="color: red">난 div야</div>
+        <div style="color: aqua">나도 div야</div>
+      </button>
+      <br />
+      <!-- cols : 가로 너비 속성 -->
+      <!-- rows : 세로 너비 속성 -->
+      <label for="textarea">많은 양의 텍스트를 받을 때 사용하는 textarea</label>
+      <textarea
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="내용을 입력해주세요."
+      ></textarea>
     </form>
   </body>
 </html>
