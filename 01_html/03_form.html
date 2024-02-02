@@ -6,10 +6,20 @@
     <title>form tag의 종류</title>
   </head>
   <body>
+    <!-- form 태그는 사용자의 입력을 받는 요소들을 묶어주는 태그 -->
+    <!-- form 태그의 속성 : action, method -> 서버와의 통신과 관련된 속성 -> 일단 skip -->
+    <!-- 사용자의 입력을 위한 태그를 form 태그 내부에 작성 -> 서버에 전달 -->
     <form>
+      <!-- 사용자의 입력을 받는 태그 -->
+      <!-- 다양한 type 속성이 있음 -->
+      <!-- input은 열린 태그 (닫는 태그x)이기 때문에 꼭 / 닫아주기 -->
       text :
       <input type="text" />
-
+      <!-- label 태그란 -->
+      <!-- for 속성을 사용해 input 태그와 연결할 수 있는 태그 -->
+      <!-- 해당 label을 클릭할 경우 연결된 input에 focus를 하거나 체크할 수 있음 -> 사용자 편의성을 높임 -->
+      <!-- lable의 for과 input의 id가 동일하면 연결됨 -->
+      <!-- label과 함께 쓸 경우(무조건 꼭 같이 써야하는건 아니지만 사용자의 편의를 위해서 사용함) -->
       <label for="aaa">text with label :</label>
       <input type="text" id="aaa" />
     </form>
