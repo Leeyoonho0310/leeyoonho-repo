@@ -30,3 +30,6 @@ li {
 #li-orange {
   background-color: orange;
 }
+
+/* 우선 순위 : 클래스 선택자 < id 선택자 */
+/* 우선 순위 : 태그 < class 선택자 < id 선택자 우선 순위를 가짐 */
