@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./study.css" />
     <script src="https://use.fontawesome.com/releases/v6.5.0/js/all.js"></script>
+    <script src="./study.js"></script>
   </head>
   <body>
-    <header>
+    <div class="screen">
       <div class="navbar">
         <div>
           <a class="nav-btn" href="#">HOME</a>
@@ -25,41 +26,205 @@
         <div>
           <a class="nav-btn" href="#">MORE</a>
         </div>
-        <i
-          style="
-            font-size: 20px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-          "
-          class="fa-solid fa-magnifying-glass"
-        ></i>
+        <div class="icon">
+          <i
+            style="
+              font-size: 20px;
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              color: white;
+            "
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
       </div>
+
       <section>
-        <img src="./KakaoTalk_20240221_212559323.jpg" alt="Los Angeles" />
+        <div class="slideshow">
+          <div class="slide active">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="./KakaoTalk_20240221_212559323.jpg"
+                alt=""
+              />
+              <div class="text-overlay">
+                <h2>Los Angeles</h2>
+                <p>We had the best time playing at Venice Beach!</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide active">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="./KakaoTalk_20240221_212559323_01.jpg"
+                alt=""
+              />
+              <div class="text-overlay">
+                <h2>New York</h2>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide active">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="./KakaoTalk_20240221_212559323_07.jpg"
+                alt=""
+              />
+              <div class="text-overlay">
+                <h2>Chicago</h2>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section>
-        <div class="title">
-          <h1>THE BAND</h1>
-        </div>
-        <p class="sub-title">We love music</p>
-        <div class="text">
-          <p>
-            We have created a fictional band website. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
+        <div class="break-point">
+          <div class="title">
+            <h1>THE BAND</h1>
+          </div>
+          <p class="sub-title">We love music</p>
+          <div class="text">
+            <p class="sub-title2">
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="photo-pic">
+            <div class="photo-box">
+              <p>Name</p>
+              <img src="./KakaoTalk_20240221_212559323_06.jpg" alt="" />
+            </div>
+            <div class="photo-box">
+              <p>Name</p>
+              <img src="./KakaoTalk_20240221_212559323_06.jpg" alt="" />
+            </div>
+            <div class="photo-box">
+              <p>Name</p>
+              <img src="./KakaoTalk_20240221_212559323_06.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
-    </header>
+
+      <section>
+        <div class="Tour-dates">
+          <div class="Tour-dates-name">
+            <h2>TOUR DATES</h2>
+            <p>Remember to book your tickets!</p>
+          </div>
+          <div class="table-box">
+            <div class="table">
+              <p>September</p>
+              <button>Sold out</button>
+            </div>
+            <div class="table">
+              <p>October</p>
+              <button class="button2">Sold out</button>
+            </div>
+            <div class="table">
+              <p>November</p>
+            </div>
+          </div>
+
+          <div class="card-box">
+            <div class="card">
+              <img src="./KakaoTalk_20240221_212559323_03.jpg" alt="" />
+              <h3>New York</h3>
+              <p>Fri 27 Nov 2016</p>
+              <h4>Praesent tincidunt sed tellus</h4>
+              <h4>ut rutrum sed vitae justo.</h4>
+              <button>Buy Tickets</button>
+            </div>
+            <div class="card">
+              <img src="./KakaoTalk_20240221_212559323_04.jpg" alt="" />
+              <h3>New York</h3>
+              <p>Fri 27 Nov 2016</p>
+              <h4>Praesent tincidunt sed tellus ut</h4>
+              <h4>rutrum sed vitae justo.</h4>
+              <button>Buy Tickets</button>
+            </div>
+            <div class="card">
+              <img src="./KakaoTalk_20240221_212559323_05.jpg" alt="" />
+              <h3>New York</h3>
+              <p>Fri 27 Nov 2016</p>
+              <h4>Praesent tincidunt sed tellus ut</h4>
+              <h4>rutrum sed vitae justo.</h4>
+              <button>Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sub-title3">
+          <h2>CONTACT</h2>
+          <p>Fan? Drop a note!</p>
+        </div>
+        <div class="icon-box">
+          <div class="icon-container">
+            <div class="icon-text">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Chicago, US</p>
+            </div>
+            <div class="icon-text">
+              <i class="fa-solid fa-phone"></i>
+              <p>Phone: +00 151515</p>
+            </div>
+            <div class="icon-text">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Email: mail@mail.com</p>
+            </div>
+          </div>
+          <div class="input-box">
+            <form>
+              <input
+                type="name"
+                placeholder="Name"
+                style="height: 30px; font-size: 20px; width: 150px"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                style="height: 30px; font-size: 20px; width: 150px"
+              />
+            </form>
+            <form>
+              <input
+                type="message"
+                placeholder="Message"
+                style="
+                  width: 355px;
+                  height: 30px;
+                  font-size: 20px;
+                  width: 320px;
+                "
+              />
+            </form>
+            <button class="button">send</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <img src="./KakaoTalk_20240221_212559323_02.jpg" alt="" />
+      </section>
+    </div>
   </body>
 </html>
