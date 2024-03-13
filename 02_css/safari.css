@@ -1,0 +1,27 @@
+/* #tiger {
+  background-color: yellow;
+}
+
+ul .lion {
+  background-color: lawngreen;
+  color: red;
+  font-weight: bold;
+}
+
+ul li:nth-child(7) {
+  background-color: skyblue;
+  color: gray;
+}
+
+ul li:nth-child(8) {
+  color: gray;
+}
+
+.zoo > .lion {
+  color: orange;
+  font-weight: 900;
+}
+
+body > .lion {
+  background-color: red;
+} */

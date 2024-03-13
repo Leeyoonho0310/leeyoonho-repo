@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contain {
+        display: flex;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 30px;
+      }
+
+      .skew-x {
+        transform: skewx(10deg);
+      }
+
+      .skew-y {
+        transform: skewy(10deg);
+      }
+
+      .skew-xy {
+        transform: skew(10deg);
+      }
+
+      .rotate-x {
+        transform: rotatex(10deg);
+      }
+      .rotate-y {
+        transform: rotatey(10deg);
+      }
+      .rotate-xy {
+        transform: rotate(10deg);
+      }
+      .translate {
+        transform: translate(-20px, -20px);
+      }
+      .translate-x {
+        transform: translatex(-20px);
+      }
+      .translate-y {
+        transform: translatey(-20px);
+      }
+      .translate-z {
+        transform: translatez(-20px);
+      }
+      .translate-3d {
+        transform: translate3d(-20px, -20px, -20px);
+      }
+      .ga {
+        line-height: 100px;
+        text-align: center;
+        background-color: antiquewhite;
+        font-size: 30px;
+        transform: rotatey(180deg);
+        /* backface-visibility: hidden; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="square skew-x"></div>
+      <div class="square skew-y"></div>
+      <div class="square skew-xy"></div>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="contain">
+      <div class="square rotate-x"></div>
+      <div class="square rotate-y"></div>
+      <div class="square rotate-xy"></div>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="contain">
+      <div class="square translate"></div>
+      <div class="square translate-x"></div>
+      <div class="square translate-y"></div>
+      <div class="square translate-z"></div>
+      <div class="square translate-3d"></div>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="contain">
+      <div class="square ga">가</div>
+    </div>
+    <br /><br />
+    <hr />
+  </body>
+</html>

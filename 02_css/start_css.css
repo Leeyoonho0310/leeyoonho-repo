@@ -1,0 +1,35 @@
+/* import 방식은 다른 css 파일에서 다른 css파일을 불러오는 것 */
+@import url("./01_import.css");
+
+/* 전체 선택자 */
+* {
+  color: red;
+}
+
+/* 태그 선택자 */
+/* 태그명 {속성: 속성값;} */
+/* 헤당 태그가 사용된 모든 요소 */
+li {
+  background-color: skyblue;
+}
+
+/* class 선택자 */
+/* html 내에서 해당 class를 가진 요소 선택 */
+/* .클래스명 { 속성: 속성값; } */
+.orange {
+  background-color: yellow;
+}
+
+.red {
+  background-color: grey;
+}
+
+/* id선택자 */
+/* html 내에서 해당 id를 가진 요소 선택 */
+/* #아이디명 { 속성: 속성값; } */
+#li-orange {
+  background-color: orange;
+}
+
+/* 우선 순위 : 클래스 선택자 < id 선택자 */
+/* 우선 순위 : 태그 < class 선택자 < id 선택자 우선 순위를 가짐 */

@@ -1,0 +1,90 @@
+.inner {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px lightgray;
+  justify-content: center;
+}
+
+.a {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 100px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: green;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  position: relative;
+  padding: 10px;
+}
+
+.text {
+  height: 32px;
+  background-color: aliceblue;
+  border: none;
+}
+
+.text:hover {
+  border: 3px solid gray;
+}
+.text:focus {
+  border: 3px solid green;
+}
+
+.fa-solid {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.btn--white {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.btn--red {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: coral;
+  border: 2px solid gray;
+  border-radius: 5px;
+  color: white;
+}

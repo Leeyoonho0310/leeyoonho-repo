@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 요소 선택자와 가상 클래스 선택자</title>
+    <!-- 가상 클래스 선택자 ->  : hover, :active, : focus, checked -->
+    <style>
+      .div1 {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: skyblue;
+      }
+
+      /* 1. 가상 클래스 선택자 */
+      /* :hover, active, visited, focus */
+      /*
+      - E:hover {} -> E 요소에 마우스가 올라가 있는 동안 E를 선택
+      - E:active {} -> E 요소에 마우스 클릭 또는 키보드 엔터가 눌린 동안 E 선택
+      - E:focus {} -> E 요소에 포커스가 머물러 있는 동안 E 선택 (주로 input에서 사용)
+      - E:visited {} -> E 요소가 링크일때, 한 번 클릭해서 해당 링크에 들어갔다가 나왔을때
+      - E:checked {} -> E 요소에 체크가 되었을때 (input의 타입이 radio나 checkbox인 경우)
+       */
+
+      /* 2. 가상 요소 선택자 */
+      /* 가상 요소 선택자 : first-child, :last-child, :nth-child(n), :not(조건) */
+      /* 
+      - E:first-child {} E가 첫 번째 요소라면 선택
+      - E:last-child {} E가 마지막 요소라면 선택
+      - E:nth-child(n) {} E가 n번째 요소라면 선택
+      - E:not(XYZ) {} XYZ가 아닌 다른 요소 선택
+       */
+      .zoo1 > * {
+        background-color: skyblue;
+        font-size: 30px;
+      }
+
+      /* 전체 선택자 사용할 경우 어떤 태그인지 상관 없이 첫 번째 요소 스타일링 */
+      /* not < first-child가 우선순위 (개발자 도구를 사용하여 취소된 것이 없는지 확인) */
+      .zoo1 > *:first-child {
+        background-color: red;
+      }
+
+      .zoo1 > li:last-child {
+        background-color: blueviolet;
+      }
+
+      /* .zoo1 의 자식 중 li태그이면서 짝수번째인 요소만 선택 */
+      .zoo1 > li:nth-child(2n) {
+        background-color: yellow;
+      }
+
+      .zoo1 > *:not(div) {
+        color: brown;
+      }
+      /* hover */
+      .div1:hover {
+        background-color: aqua;
+        height: 150px;
+      }
+
+      /*  active  */
+      .div1:active {
+        background-color: pink;
+        width: 150px;
+      }
+
+      /* focus */
+      input:focus {
+        background-color: cornflowerblue;
+        width: 100px;
+        outline-color: blueviolet;
+      }
+
+      .links > a:active {
+        color: red;
+      }
+
+      /* visited */
+      .links > a:visited {
+        color: cadetblue;
+      }
+
+      .div2 {
+        background-color: pink;
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      /* 가상 요소 선택자 */
+      /* content 속성이 필수로 작성되어야 함 */
+      /* ::before은 선택된 요소의 content 앞에 해당 content값이 들어감 */
+      .div2::before {
+        content: "이것은";
+      }
+
+      /* hover 기능을 넣을 수 있음 */
+      .div2:hover::before {
+        content: "얍";
+      }
+
+      /* after는 선택된 요소의 content뒤에 content값이 들어감 */
+      .div2::after {
+        content: "dfdfdf";
+      }
+
+      .content article {
+        height: 500px;
+        border: 5px solid blue;
+      }
+
+      #detail {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <a href="#detail">상세정보</a>
+      <a href="#review">후기</a>
+      <a href="#community">커뮤니티</a>
+    </section>
+    <section class="content">
+      <article id="detail">여기는 상세정보 내용</article>
+      <article id="review">여기는 후기 내용</article>
+      <article id="community">여기는 커뮤니티 내용</article>
+    </section>
+    <br /><br /><br />
+    <hr />
+    <div class="div1">
+      <span>div1</span>
+    </div>
+
+    <input type="text" />
+    <div class="links">
+      <a href="https://www.naver.com" target="_blank">네이버</a>
+      <a href="https://www.google.co.kr" target="_blank">구글</a>
+    </div>
+
+    <hr />
+    <ul class="zoo1">
+      <h1>새싹 동물원</h1>
+      <div>원숭이</div>
+      <li>호랑이</li>
+      <li>사자</li>
+      <li>판다</li>
+      <li>곰</li>
+      <li>재규어</li>
+      <li>코끼리</li>
+      <li>낙타</li>
+    </ul>
+
+    <hr />
+    <div class="div2">가상 요소 선택자</div>
+  </body>
+</html>

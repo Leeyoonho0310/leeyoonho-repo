@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc 및 line-height 사용 실습</title>
+    <style>
+      .main-container {
+        width: 100vw;
+        height: 100vw;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content {
+        line-height: 10vw;
+        width: 10vw;
+        height: 10vw;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+
+      /* .content {
+        width: 10vw;
+        height: 10vw;
+        background-color: blue;
+        margin: calc(50vh-5vw) auto 0 auto;
+        color: white;
+        text-align: center;
+        line-height: 10vw;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content">Sesac</div>
+    </div>
+  </body>
+</html>

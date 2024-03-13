@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리를 이용한 배경 색상 변경</title>
+    <style>
+      /* 기본 배경 색상 설정 */
+      body {
+        background-color: orange; /* 기본 배경 색상을 오렌지색으로 지정 */
+      }
+
+      /* 뷰포트가 500px 이상일 때의 배경 색상 설정 */
+      @media screen and (min-width: 1000px) {
+        body {
+          background-color: skyblue; /* 뷰포트가 500px 이상이면 배경 색상을 하늘색으로 변경 */
+        }
+      }
+      @media screen and (max-width: 800px) {
+        body {
+          background-color: darkgrey;
+        }
+      }
+      @media screen and (max-height: 1000px) {
+        body {
+          color: crimson;
+        }
+        p {
+          background-color: coral;
+          font-size: 10px;
+        }
+      }
+      @media screen and (min-height: 800px) {
+        body {
+          color: blue;
+        }
+        p {
+          background-color: cadetblue;
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>미디어 쿼리 실습</p>
+    <!-- 여기에 웹 페이지의 내용을 추가할 수 있습니다. -->
+  </body>
+</html>

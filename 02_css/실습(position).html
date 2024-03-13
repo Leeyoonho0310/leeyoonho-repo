@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+      }
+
+      .product-info {
+        height: 50vh;
+        background-color: aliceblue;
+      }
+
+      .product-info-detail {
+        background-color: palegoldenrod;
+        height: 1500px;
+      }
+
+      .fixed-tab {
+        background-color: coral;
+        position: sticky;
+        top: 0;
+        padding: 30px;
+        text-align: center;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+      }
+
+      .menu {
+        margin-right: 100px;
+        font-size: 30px;
+      }
+
+      .btn {
+        width: 50px;
+        height: 50px;
+        background-color: pink;
+        text-align: center;
+        line-height: 50px;
+        /* 완전한 원을 사용하려면 border-radious: 50%; */
+        border-radius: 50%;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .search {
+        width: 500px;
+        background-image: url("../img/search-icon.png");
+        background-position: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 0px;
+        border-radius: 20px;
+        background-color: gainsboro;
+        padding: 30px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      .search:focus {
+        /* focus시 자동으로 생기는 테두리 속성 */
+        outline: none;
+      }
+      /* not(input:focus)은 포커스 되었을때를 제외한 hover 상태를 위해 작성 */
+      .search:hover {
+        background-color: #b0b0b0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="product-info">section 1</section>
+      <section class="product-info-detail">
+        <div class="fixed-tab">
+          <div class="menu"><a href="#">상품정보</a></div>
+          <div class="menu"><a href="#">혜택/구매정보</a></div>
+          <div class="menu"><a href="#">고객리뷰/Q&A</a></div>
+          <div class="menu"><a href="#">추천 상품</a></div>
+        </div>
+      </section>
+    </main>
+    <div class="btn">
+      <a href="#" class="top-btn">위로</a>
+    </div>
+    <br /><br />
+    <hr />
+    <form>
+      <input class="search" type="text" placeholder="검색" />
+    </form>
+  </body>
+</html>

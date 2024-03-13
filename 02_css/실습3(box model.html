@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box model 실습</title>
+    <style>
+      .main-container {
+        width: auto;
+        height: 200px;
+        background-color: orange;
+        display: flex;
+        box-sizing: content-box;
+      }
+
+      .box-sizing {
+        margin-right: 30px;
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div style="background-color: skyblue" class="box-sizing">HTML</div>
+      <div style="background-color: green" class="box-sizing">CSS</div>
+      <div style="background-color: red" class="box-sizing">Javascript</div>
+    </div>
+  </body>
+</html>

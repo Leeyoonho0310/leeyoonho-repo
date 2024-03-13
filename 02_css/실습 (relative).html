@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        position: relative;
+      }
+
+      .item-1 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: relative;
+        left: 50px;
+        top: 30px;
+      }
+
+      .item-2 {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+      }
+
+      .item-3 {
+        width: 100px;
+        height: 100px;
+        background-color: palegreen;
+        position: fixed;
+        right: 100px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="item-1">item-1</div>
+      <div class="item-2">itme-2</div>
+    </div>
+    <div class="item-3">item-3</div>
+  </body>
+</html>
