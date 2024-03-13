@@ -90,3 +90,20 @@ function hello(name) {
 
 const username = "layla";
 hello(username);
+
+// multifly  실습
+function multifly(num3, num4) {
+  return num3 * num4;
+  // console.log("num3 :", num3);
+  // console.log("num4 :", num4);
+}
+
+console.log(multifly(3, 7)); //21
+console.log(multifly(4, 10)); //40
+
+// square 실습
+const square = function (num) {
+  return num ** 3;
+};
+
+console.log(square(5));
