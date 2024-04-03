@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        height: 50px;
+        border: 3px #ff8f8f solid;
+        position: sticky;
+        top: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header1 {
+        display: flex;
+      }
+
+      .header1 p {
+        margin: 15px;
+      }
+
+      .logo h2 {
+        line-height: 10px;
+        margin-right: 50px;
+      }
+
+      main {
+        height: 1000px;
+        border: 3px yellowgreen solid;
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .name {
+        text-align: center;
+      }
+
+      .title {
+        border: 3px pink solid;
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .content-box {
+        width: 50px;
+        height: 30px;
+        margin: 30px;
+        padding: 30px;
+        border: 3px paleturquoise solid;
+        line-height: 30px;
+        box-sizing: content-box;
+      }
+
+      .community {
+        border: 3px pink solid;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .page-btn {
+        padding: 10px 20px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .subname {
+        margin-left: 200px;
+      }
+
+      section {
+        width: 80%;
+        border: 3px skyblue solid;
+        height: 80px;
+        margin: 30px;
+        margin-left: 200px;
+      }
+
+      section p {
+        margin-left: 10px;
+      }
+
+      footer {
+        height: 80px;
+        border: 3px gray solid;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header1">
+          <p>케어</p>
+          <p>스토어</p>
+          <p>커뮤니티</p>
+        </div>
+        <div class="logo">
+          <h2>LumiPet</h2>
+        </div>
+        <div class="header1">
+          <p>마이페이지</p>
+          <p>로그인</p>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="name">커뮤니티</h2>
+
+    <main>
+      <div class="title">
+        <h2>카테고리</h2>
+        <div class="content">
+          <div class="content-box">베스트</div>
+          <div class="content-box">자유</div>
+          <div class="content-box">질문</div>
+          <div class="content-box">후기</div>
+        </div>
+      </div>
+
+      <div class="community">
+        <h2 class="subname">게시글</h2>
+        <section><p>게시글1</p></section>
+        <section><p>게시글2</p></section>
+        <section><p>게시글3</p></section>
+        <section><p>게시글4</p></section>
+        <section><p>게시글5</p></section>
+        <section><p>게시글6</p></section>
+        <section><p>게시글7</p></section>
+        <div style="margin-left: 700px; margin-bottom: 30px">
+          <button class="page-btn">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn">5</button>
+          <button class="page-btn">6</button>
+          <button class="page-btn">7</button>
+          <button class="page-btn">8</button>
+          <button class="page-btn">9</button>
+          <button class="page-btn">10</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p style="text-align: center">footer</p>
+      <button class="btn">글쓰기</button>
+    </footer>
+  </body>
+</html>
