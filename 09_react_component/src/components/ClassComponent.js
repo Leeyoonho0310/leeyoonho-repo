@@ -1,8 +1,8 @@
-import { Component } from 'react';
+import { Component } from "react";
 
 class ClassComponent extends Component {
   render() {
-    return <div>클래스형 컴포넌트</div>;
+    return <h1>클래스형 컴포넌트</h1>;
   }
 }
 

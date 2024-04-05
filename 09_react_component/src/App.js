@@ -1,6 +1,7 @@
-import './App.css';
-import ClassComponent from './components/ClassComponent';
-import FunctionComponent from './components/FunctionComponent';
+import "./App.css";
+import ClassComponent from "./components/ClassComponent";
+import FunctionComponent from "./components/FunctionComponent";
+import Prac from "./components/Prac";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <ClassComponent></ClassComponent>
       {/* 함수형 컴포넌트 */}
       <FunctionComponent />
+
+      <Prac />
     </div>
   );
 }
