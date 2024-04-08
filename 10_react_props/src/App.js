@@ -1,6 +1,8 @@
 import FuncProps from "./components/FuncProps";
 import ClassProps from "./components/ClassProps";
-import ProductList from "./components/ProductList";
+import "./App.css";
+import ProductItem from "./components/ProductItem";
+import ProductContainer from "./components/ProductContainer";
 
 function App() {
   const sayHi = () => {
@@ -115,9 +117,12 @@ function App() {
       {/* //------------------------------ */}
 
       {/* 연습 */}
-      {products.map((prod) => (
-        <ProductList prodData={prod} key={prod.id} />
-      ))}
+      {/* {products.map((prod) => (
+        <ProductItem prodData={prod} key={prod.id} />
+      ))} */}
+
+      {/* 연습 develop */}
+      <ProductContainer products={products} />
     </div>
   );
 }
