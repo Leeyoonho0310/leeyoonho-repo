@@ -155,3 +155,14 @@ $mobile: 700px;
 .sass-use-if {
   @include useIf($bgcolor: pink);
 }
+
+@import "utils";
+
+// import utils
+.sass-util {
+  background-color: $color-main-util;
+}
+
+.sass-util-btn {
+  @include btn($bgColor: $color-main-util);
+}
